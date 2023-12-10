@@ -1,5 +1,5 @@
-# File-Manipulation
-Manipulating files in Python
+# File-Searching
+Searching for files in Python
 
 First, the program reads a line of input that specifies which files are eligible to be found.
         The letter D, followed by a space, followed (on the rest of the line) by the path to a directory. In this case, all of the files in that directory will be under consideration, but no subdirectories (and no files in those subdirectories) will be. (You can think of the letter D here as standing for "directory.")
