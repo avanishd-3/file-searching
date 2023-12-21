@@ -1,4 +1,4 @@
-# File-Searching
+# file-searching
 Searching for files in Python
 
 First line of input:
