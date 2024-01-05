@@ -98,17 +98,16 @@ def dir_search(path: Path) -> list:
     return file_list_direct
 
 
-def recursive_search(path: Path, file_list: []) -> list:
+def recursive_search(path: Path) -> list:
     """ Return files in directory recursively given path"""
-    for item in path.iterdir():
+    file_list_recursive = []
+    for item in path.rglob("*"):
         try:
-            if item.is_dir():
-                recursive_search(item, file_list)
-            else:
-                file_list.append(item)
+            if item.is_file():
+                file_list_recursive.append(item)
         except (OSError, FileNotFoundError, PermissionError):  # Move on when file cannot be accessed
             continue
-    return file_list
+    return file_list_recursive
 
 
 def _first_case(command: str, look: Path) -> list:
@@ -121,7 +120,7 @@ def _first_case(command: str, look: Path) -> list:
             return dir_search(look)
         case 'R':
             """All files in directory under consideration w/ subdirectories"""
-            return recursive_search(look, [])\
+            return recursive_search(look)
 
 
 
