@@ -2,6 +2,7 @@
 Installation instructions
 
 1. git clone https://github.com/avanishd-3/file-searching
+2. Run file_searching.py
 
 Searching for files in Python
 
