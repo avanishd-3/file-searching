@@ -13,12 +13,12 @@ First line of input (choose one):
 If not in this format or directory does not exist, prints ERROR and asks for input until input is valid
 
 Second line of input (choose one):
-1. A -> Prinst all previous files
+1. A -> Prints all previous files
 2. N name -> Prints files with a particular name
 3. E extension -> Prints files with a particular extension (with or without dot in extension)
 4. T text -> Prints files with the particular text
 5. < size -> Prints files smaller than a particular size (in bytes)
-6. > size -> Prints files larger than a particular size (in bytes)
+6. Greater (>) size -> Prints files larger than a particular size (in bytes)
 
 If input does not match this, prints ERROR and asks for input until input is valid.
 
